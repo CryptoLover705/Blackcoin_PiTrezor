@@ -13,7 +13,7 @@ SRC_URI = "git://github.com/CryptoLover705/Blackcoin_PiTrezor_Firmware.git;branc
            file://pitrezor.config \
           "
 
-SRCREV = "3d3c112bfe428ccf730e331997e283837246ee5d"
+SRCREV = "b09780f2c23a22e278dd7b9fa70557af9045ddab"
 
 S = "${WORKDIR}/git"
 
