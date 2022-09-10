@@ -1,11 +1,11 @@
 SUMMARY = "Client side implementation for TREZOR-compatible Blackcoin hardware wallets."
 
-HOMEPAGE = "https://github.com/CryptoLover705/Blackcoin_PiTrezor"
+HOMEPAGE = "https://github.com/trezor/python-trezor"
 LICENSE = "LGPLv3"
-LIC_FILES_CHKSUM = "file://COPYING;md5=a7a390d1c6d31d9e293b723cb92e23cb"
+LIC_FILES_CHKSUM = "file://COPYING;md5=e6a600fd5e1d9cbde2d983680233ad02"
 
-SRC_URI = "gitsm://github.com/CryptoLover705/Blackcoin_PiTrezor.git"
-SRCREV = "a84b7dcef8d0fc990470e90d640294167aa136ba"
+SRC_URI = "gitsm://github.com/trezor/python-trezor.git"
+SRCREV = "252f946f409fc87d6b9f462682ef36219b96ece3"
 S="${WORKDIR}/git"
 
 SRC_URI[md5sum] = ""

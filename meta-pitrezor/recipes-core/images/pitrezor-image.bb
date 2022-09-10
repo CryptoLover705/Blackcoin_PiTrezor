@@ -5,7 +5,10 @@ include recipes-core/images/core-image-minimal.bb
 IMAGE_INSTALL += " \
 	kernel-module-gadgetfs \
 	kernel-module-dwc2 \
-	"
+        "
+
+IMAGE_INSTALL:append:raspberrypi4 = " kernel-module-v3d libudev "
+
 IMAGE_INSTALL += " pitrezor "
 
 customize_image() {
@@ -33,4 +36,4 @@ customize_image() {
   chmod a+x ${IMAGE_ROOTFS}/etc/rcS.d/S10mountgadget
 }
 
-ROOTFS_POSTPROCESS_COMMAND_append = " customize_image; "
+ROOTFS_POSTPROCESS_COMMAND:append = " customize_image; "
