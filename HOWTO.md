@@ -68,10 +68,10 @@ When you change a value, keep the line formating as-is with the export statement
 
 For the Adafruit bonnet, you must change the values to these:
 
-`export TREZOR_OLED_TYPE=1`
-`export TREZOR_OLED_FLIP=1`
-`export TREZOR_GPIO_YES=6`
-`export TREZOR_GPIO_NO=5`
+*`export TREZOR_OLED_TYPE=1`
+*`export TREZOR_OLED_FLIP=1`
+*`export TREZOR_GPIO_YES=6`
+*`export TREZOR_GPIO_NO=5`
 
 ## Is this secure ?
 The main difference of this device versus the real trezor device is that the pi zero stores everything on the SD card. The equivalent of the flash memory for the trezor is stored in a file on the first partition. That means that anybody that has your SD card can access your seed words and private key.
